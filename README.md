@@ -71,17 +71,23 @@ Sure! Here's an updated version of the instructions, with the additional steps a
 
    - Once the Flask app is running, you can test it by sending a POST request with some text. Follow the appropriate command for your operating system:
 
-#### On Unix-like systems (Linux/macOS):
+    #### On Unix-like systems (Linux/macOS):
+    
+    ```bash
+    curl -X POST -H "Content-Type: application/json" -d '{"text": "鈴木は4月の陽気の良い日に、鈴をつけて熊本県の阿蘇山に登った"}' http://127.0.0.1:5000/
+    ```
+    
+    #### On Windows Command Prompt:
+    
+    ```cmd
+    curl -X POST -H "Content-Type: application/json" -d "{\"text\": \"鈴木は4月の陽気の良い日に、鈴をつけて熊本県の阿蘇山に登った\"}" http://127.0.0.1:5000/
+    ```
+    
+    This will send the text `"鈴木は4月の陽気の良い日に、鈴をつけて熊本県の阿蘇山に登った"` to the running Flask app, and it should return the named entity recognition (NER) results.
 
-```bash
-curl -X POST -H "Content-Type: application/json" -d '{"text": "鈴木は4月の陽気の良い日に、鈴をつけて熊本県の阿蘇山に登った"}' http://127.0.0.1:5000/
-```
+5. **Test on Hugging Face Spaces**:
 
-#### On Windows Command Prompt:
+You can also test the model live on Hugging Face Spaces by visiting the link below:
+This will display the Hugging Face logo, and when clicked, it will direct the user to your Hugging Face space for the JP NER model: [![Hugging Face](https://raw.githubusercontent.com/huggingface/transformers/master/docs/source/imgs/huggingface_logo.svg)](https://huggingface.co/spaces/sabridsn/JP_NER)
 
-```cmd
-curl -X POST -H "Content-Type: application/json" -d "{\"text\": \"鈴木は4月の陽気の良い日に、鈴をつけて熊本県の阿蘇山に登った\"}" http://127.0.0.1:5000/
-```
-
-This will send the text `"鈴木は4月の陽気の良い日に、鈴をつけて熊本県の阿蘇山に登った"` to the running Flask app, and it should return the named entity recognition (NER) results.
 
