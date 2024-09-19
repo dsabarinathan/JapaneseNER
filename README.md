@@ -60,14 +60,27 @@ Sure! Here's an updated version of the instructions, with the additional steps a
      pip install -r requirements.txt
      ```
 
-3. **Run the Flask Application**:
+3. **Train the NER Model**:
+
+   ```bash
+      python train.py --json_path=ner.json
+
+   ```
+
+4. **Evaluate the NER Model**:
+
+   ```bash
+      python test.py
+   ```
+
+5. **Run the Flask Application**:
    - Start the Flask app by running the following command:
 
      ```bash
      python app_flask.py
      ```
 
-4. **Test the Flask Application**:
+6. **Test the Flask Application**:
 
    - Once the Flask app is running, you can test it by sending a POST request with some text. Follow the appropriate command for your operating system:
 
@@ -85,7 +98,7 @@ Sure! Here's an updated version of the instructions, with the additional steps a
     
     This will send the text `"鈴木は4月の陽気の良い日に、鈴をつけて熊本県の阿蘇山に登った"` to the running Flask app, and it should return the named entity recognition (NER) results.
 
-5. **Test on Hugging Face Spaces**:
+7. **Test on Hugging Face Spaces**:
 
 You can also test the model live on Hugging Face Spaces by visiting the link below:
 This will display the Hugging Face logo, and when clicked, it will direct the user to your Hugging Face space for the JP NER model: [![Hugging Face](https://raw.githubusercontent.com/huggingface/transformers/master/docs/source/imgs/huggingface_logo.svg)](https://huggingface.co/spaces/sabridsn/JP_NER)
