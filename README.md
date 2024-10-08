@@ -39,6 +39,12 @@ After processing, the model can highlight and categorize entities in a Japanese 
 - *阿蘇山* → LOC (Location)
 
 
+### Trained Model:
+
+  You can find and download the model from Hugging Face here:  
+  [XLM-Roberta Name Entity Recognition - Japanese](https://huggingface.co/sabaridsnfuji/xlm-roberta-name-entity-recognition-japanese)
+
+
 Sure! Here's an updated version of the instructions, with the additional steps at the beginning:
 
 ---
